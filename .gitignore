@@ -1,0 +1,33 @@
+# OpenTofu / Terraform local dirs
+.terraform/
+.tofu/
+
+# State files - do not commit
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+
+# Variable secrets - do not commit
+*.tfvars
+*.tfvars.json
+
+# Crash/log files
+crash.log
+crash.*.log
+*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Local CLI config
+.terraformrc
+terraform.rc
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
